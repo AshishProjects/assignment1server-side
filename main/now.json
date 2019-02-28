@@ -3,7 +3,7 @@
     "name": "koa-mysql-assignment-todo-list",
     "alias": "koa-mysql-assignment-todo-list.now.sh",
     "env": {
-      "DBHOST": "mydatabase.c429pnqwz5rj.us-east-2.rds.amazonaws.com",
+      "DBHOST": "aws_endpoint",
       "DBPORT": "3306",
       "DBUSER": "your_user_name",
       "DBPASSWORD": "your_password",
