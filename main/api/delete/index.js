@@ -14,8 +14,8 @@ app.use(async ctx => {
 
 async function deleteTodo(todoItem) {
   try {
-    const deletedTodo = await pool.query(`DELETE FROM listtodo WHERE todoItem LIKE '%${todoItem}%';`)
-    return deletedTodo
+    const deletedDataTodo = await pool.query(`DELETE FROM listtodo WHERE todoItem LIKE '%${todoItem}%';`)
+    return deletedDataTodo
   }catch(e){
     console.error(e)
   }
