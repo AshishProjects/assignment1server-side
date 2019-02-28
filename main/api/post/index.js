@@ -9,7 +9,7 @@ app.use(bodyParser())
 app.use(async ctx => {
   const postBody = await ctx.request.body
   const postDataItem = await postTodo(postBody.todoItem, postBody.todoDateAdded, postBody.todoStatus, postBody.todoDueBy)
-  ctx.body = `New todo created with todoID ${postItem[0].insertId}`
+  ctx.body = `New todo created with todoID ${postDataItem[0].insertId}`
 })
 
 async function postTodo(todoItem, todoDateAdded, todoStatus, todoDueBy) {
