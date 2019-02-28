@@ -13,8 +13,8 @@ app.use(async ctx => {
 
 async function getTodos() {
   try {
-    const updatedTodos = await pool.query(`SELECT * FROM listtodo;`)
-    return updatedTodos[0]
+    const newdataTodos = await pool.query(`SELECT * FROM listtodo;`)
+    return newdataTodos[0]
   }catch(e){
     console.error(e)
   }
