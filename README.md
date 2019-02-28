@@ -9,7 +9,7 @@ http POST https://koa-mysql-assignment-todo-list-5ylffxdz5.now.sh/api/post < pos
 ## View data
 
 ```
-http GET https://koa-mysql-assignment-todo-list-5ylffxdz5.now.sh/api/get < get.json
+http GET https://koa-mysql-assignment-todo-list-5ylffxdz5.now.sh/api/get
 ```
 ## Update data
 
