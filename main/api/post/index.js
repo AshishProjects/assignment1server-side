@@ -16,7 +16,7 @@ async function postTodo(todoItem, todoDateAdded, todoStatus) {
   try {
     const postedTodo = await pool.query(`
     INSERT INTO listtodo (todoItem, todoDateAdded, todoStatus) 
-    VALUES ("${todoItem}", "${todoDateAdded}", "${todoStatus}");
+    VALUES ("${todoItem}", "${todoDateAdded}", "${todoStatus}", "${todoDueBy}");
     `)
     return postedTodo
   }catch(e){
